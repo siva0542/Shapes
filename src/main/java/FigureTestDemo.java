@@ -7,9 +7,16 @@ public class FigureTestDemo {
     }
 
     public int area() {
-        if(length!=breadth)
-            return length*breadth;
-        else
+        if(length==breadth)
             return length*length;
+        else
+            return length*breadth;
+    }
+
+    public int perimeter() {
+        if(length==breadth)
+            return 4*length;
+        else
+            return 2*(length+breadth);
     }
 }
