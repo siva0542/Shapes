@@ -84,4 +84,20 @@ public class FigureTest {
         assertEquals(actualArea,expectedArea);
     }
 
+    @Test
+    public void toCalculatePerimeterOfSquareWhenSideIsPositive(){
+        FigureTestDemo obj=new FigureTestDemo(5);
+        int actualArea=obj.perimeter();
+        int expectedArea=20;
+        assertEquals(actualArea,expectedArea);
+    }
+
+    @Test
+    public void toCalculatePerimeterOfSquareWhenSideIsNegative(){
+        FigureTestDemo obj=new FigureTestDemo(-5);
+        int actualArea=obj.perimeter();
+        int expectedArea=-20;
+        assertEquals(actualArea,expectedArea);
+    }
+
 }
