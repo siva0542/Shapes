@@ -5,6 +5,10 @@ public class FigureTestDemo {
         this.length=length;
         this.breadth=breadth;
     }
+    public FigureTestDemo(int side){
+        this.length=side;
+        this.breadth=side;
+    }
 
     public int area() {
         if(length==breadth)

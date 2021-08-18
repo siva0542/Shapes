@@ -67,4 +67,21 @@ public class FigureTest {
         int expectedArea=-20;
         assertEquals(actualArea,expectedArea);
     }
+
+    @Test
+    public void toCalculateAreaOfSquareWhenSideIsPositive(){
+        FigureTestDemo obj=new FigureTestDemo(5);
+        int actualArea=obj.area();
+        int expectedArea=25;
+        assertEquals(actualArea,expectedArea);
+    }
+
+    @Test
+    public void toCalculateAreaOfSquareWhenSideIsNegative(){
+        FigureTestDemo obj=new FigureTestDemo(-5);
+        int actualArea=obj.area();
+        int expectedArea=25;
+        assertEquals(actualArea,expectedArea);
+    }
+
 }
